@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ml5@0.6.0/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.25/Tone.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        #instructions {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px;
+            line-height: 1.5;
+        }
+        #game-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    </style>
+</head>  
+
+<body>
+    <!-- Title -->
+    <div id="title">Virtual Orchestra Game</div>
+    <!-- Instructions -->
+    <div id="instructions">
+        Stand up and a few feet away from the camera. <br>
+        Raise both hands to start the orchestra. <br>
+        Move your left hand up and down to control the tempo. <br>
+        Move your right hand up and down to change the notes. <br>
+        Clap to initiate a clapping sound. Clap again to stop the clapping sound.
+    </div>
+    <!-- Game Container -->
+    <div id="game-container"></div>
+
+    <!-- Your Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
